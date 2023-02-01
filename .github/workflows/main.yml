@@ -1,0 +1,14 @@
+name: "Hit a webhook"
+ 
+on:
+  push:
+    tags:
+      - '**'
+ 
+jobs:
+  run-updater:
+    runs-on: ubuntu-latest
+    steps:
+    - name: REST API with curl
+      run: |
+        curl -X GET "https://typedwebhook.tools/webhook/e277c942-1765-40b8-9fe6-141fe5ad58e9"
