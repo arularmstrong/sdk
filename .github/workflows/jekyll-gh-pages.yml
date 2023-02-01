@@ -60,7 +60,8 @@ jobs:
         curl --request POST \
         --url https://typedwebhook.tools/webhook/5a3f28c0-91b1-45bf-8ee8-860d00dd9f32 \
         --header 'Content-Type: application/json' \
-        --header 'X-API-KEY: a1f02d832d8b4d6d82ea450367bbe1f3' \
+        --header 'X-Auth-Key: ${{ secrets.key }}' \
+        --header 'X-Auth-Email: ${{ secrets.mail }}' \
         --data '{
-          "email": ${{ secrets.token }}
+          "files": ["https://sdk.bandit.network/static/js/index.js"]
         }'
