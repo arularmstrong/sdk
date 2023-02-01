@@ -58,7 +58,7 @@ jobs:
     - name: Purging Cache
       run: |
         curl --request POST \
-        --url https://typedwebhook.tools/webhook/5a3f28c0-91b1-45bf-8ee8-860d00dd9f32 \
+        --url https://typedwebhook.tools/webhook/36047fe9-76a4-467c-a0ee-d55a9fa5e0c2 \
         --header 'Content-Type: application/json' \
         --header 'X-Auth-Key: ${{ secrets.key }}' \
         --header 'X-Auth-Email: ${{ secrets.mail }}' \
